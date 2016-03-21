@@ -3,19 +3,19 @@ Getting Started
 ***************
 
 Installing Globus Endpoints
-###########################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. topic::How to Set Up New Endpoints
+.. topic::How to Set Up New Endpoints
 
-    - Please visit `Globus Connect <https://www.globus.org/globus-connect>`_ 
-    - Select `Globus Connect Personal <https://www.globus.org/globus-connect-personal>`_ if you are researchers and other end users 
-    - Select `Globus Connect Server <https://www.globus.org/globus-connect-server>`_ if you are network and system administrators
-    - The web link should be self-explanatory with all the details on installation; however, for any issues and questions please contact us at support@globus.org
+     - Please visit `Globus Connect <https://www.globus.org/globus-connect>`_ 
+     - Select `Globus Connect Personal <https://www.globus.org/globus-connect-personal>`_ if you are researchers and other end users 
+     - Select `Globus Connect Server <https://www.globus.org/globus-connect-server>`_ if you are network and system administrators
+     - The web link should be self-explanatory with all the details on installation; however, for any issues and questions please contact us at support@globus.org
 
    .. figure:: figs/gg_1.png 
 
 Access to Globus Genomics Instance
-##################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. topic:: How to Access to Globus Genomics (i.e., https://cgi.globusgenomics.org)
 
@@ -40,7 +40,7 @@ Access to Globus Genomics Instance
 
 
 Globus Connect
-##############
+^^^^^^^^^^^^^^
 
 .. topic:: Three different types of Globus endpoints are available to setup
 
