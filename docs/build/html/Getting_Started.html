@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting Started &mdash; test 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="test 0.1 documentation" href="index.html" />
+    <link rel="next" title="Practical Guide" href="practical_guide.html" />
+    <link rel="prev" title="Welcome to Globus Genomics!" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installing-globus-endpoints">
+<h2>Installing Globus Endpoints<a class="headerlink" href="#installing-globus-endpoints" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">How to Set Up New Endpoints</p>
+<blockquote>
+<div><ul class="simple">
+<li>Please visit <a class="reference external" href="https://www.globus.org/globus-connect">Globus Connect</a></li>
+<li>Select <a class="reference external" href="https://www.globus.org/globus-connect-personal">Globus Connect Personal</a> if you are researchers and other end users</li>
+<li>Select <a class="reference external" href="https://www.globus.org/globus-connect-server">Globus Connect Server</a> if you are network and system administrators</li>
+<li>The web link should be self-explanatory with all the details on installation; however, for any issues and questions please contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;globus&#46;org">support<span>&#64;</span>globus<span>&#46;</span>org</a></li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/gg_1.png" src="_images/gg_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="access-to-globus-genomics-instance">
+<h2>Access to Globus Genomics Instance<a class="headerlink" href="#access-to-globus-genomics-instance" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">How to Access to Globus Genomics (i.e., <a class="reference external" href="https://cgi.globusgenomics.org">https://cgi.globusgenomics.org</a>)</p>
+<blockquote>
+<div><ul class="simple">
+<li>Register at <a class="reference external" href="http://www.globus.org">http://www.globus.org</a> and send your login name to <a class="reference external" href="mailto:support&#37;&#52;&#48;globus&#46;org">support<span>&#64;</span>globus<span>&#46;</span>org</a></li>
+<li>Once registred, go to <a class="reference external" href="https://www.globus.org/groups#id=a172c434-66eb-11e5-8d97-22000ab80e73">https://www.globus.org/groups#id=a172c434-66eb-11e5-8d97-22000ab80e73</a></li>
+<li>Click on <strong>Search</strong> and put keyword of your group</li>
+<li>Once you find the group of interest, click the group name followed by  <strong>Join Group</strong> that will send a message to an administrator who can approve your request.</li>
+<li>Once you are added to the group, you can login to <a class="reference external" href="https://cgi.globusgenomics.org">https://cgi.globusgenomics.org</a> with your globus username/passwd.</li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/gg_2.png" src="_images/gg_2.png" />
+</div>
+</div>
+<div class="topic">
+<p class="topic-title first">How to Transfer Data</p>
+<blockquote>
+<div><ul class="simple">
+<li>Login to your Globus Genomics instance</li>
+<li>From the tool panel, go to <strong>Globus Data Transfer</strong> -&gt; <strong>Browse and Get Data via Globus Online</strong></li>
+<li>Set <strong>Source Endpoint</strong> and <strong>Source Path</strong> and then click <strong>Execute</strong></li>
+<li>For bulk transfers, please contact us at <a class="reference external" href="mailto:support&#37;&#52;&#48;globus&#46;org">support<span>&#64;</span>globus<span>&#46;</span>org</a></li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/gg_3.png" src="_images/gg_3.png" />
+</div>
+<div class="figure">
+<img alt="_images/gg_4.png" src="_images/gg_4.png" />
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Globus Connect<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Three different types of Globus endpoints are available to setup</p>
+<ol class="arabic simple">
+<li>Globus Connect Personal (GCP):</li>
+</ol>
+<ul>
+<li><p class="first">Ideal for individual users using personal computers, and the endpoint will be associated only with the user&#8217;s Globus account. Please follow the web links for more details:</p>
+<blockquote>
+<div><ul class="simple">
+<li>GCP: <a class="reference external" href="https://www.globus.org/globus-connect">https://www.globus.org/globus-connect</a></li>
+<li>Firewall/Ports requirements: <a class="reference external" href="https://support.globus.org/entries/20999718-What-ports-does-Globus-Connect-Personal-need-open">https://support.globus.org/entries/20999718-What-ports-does-Globus-Connect-Personal-need-open</a></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>Globus Connect Server (GCS):</li>
+</ol>
+<ul>
+<li><p class="first">Ideal for shared hosts where multiple users can use the endpoint, e.g., lab clusters, research computing facilities, server hosts, etc. Please follow the web links for more details on how to install and configure a GCS:</p>
+<blockquote>
+<div><ul class="simple">
+<li>GCS: <a class="reference external" href="https://www.globus.org/globus-connect-server">https://www.globus.org/globus-connect-server</a></li>
+<li>Firewall/Ports requirements: <a class="reference external" href="https://support.globus.org/entries/20999723-What-ports-does-Globus-Connect-Server-need-open">https://support.globus.org/entries/20999723-What-ports-does-Globus-Connect-Server-need-open</a></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<ol class="arabic simple" start="3">
+<li>AWS S3 Endpoint (<strong>Requires Subscription</strong>):</li>
+</ol>
+<ul>
+<li><p class="first">Allows you to create a logical endpoint using a single AWS S3 bucket. This allows you to transfer data from any Globus endpoints to a S3 endpointi. Please follow the web link for further details:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Amazon S3 endpoint: <a class="reference external" href="https://www.globus.org/amazon-web-services/s3-endpoint-configuration">https://www.globus.org/amazon-web-services/s3-endpoint-configuration</a></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#installing-globus-endpoints">Installing Globus Endpoints</a></li>
+<li><a class="reference internal" href="#access-to-globus-genomics-instance">Access to Globus Genomics Instance</a></li>
+<li><a class="reference internal" href="#id1">Globus Connect</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Globus Genomics!</a></li>
+      <li>Next: <a href="practical_guide.html" title="next chapter">Practical Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/getting_started.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, test.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/getting_started.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
