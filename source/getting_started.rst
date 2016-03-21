@@ -5,7 +5,7 @@ Getting Started
 Installing Globus Endpoints
 ###########################
 
-.. topic::How to Set Up New Endpoints
+   .. topic::How to Set Up New Endpoints
 
     - Please visit `Globus Connect <https://www.globus.org/globus-connect>`_ 
     - Select `Globus Connect Personal <https://www.globus.org/globus-connect-personal>`_ if you are researchers and other end users 
