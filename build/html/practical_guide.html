@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Practical Guide &mdash; test 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="test 0.1 documentation" href="index.html" />
+    <link rel="next" title="Contact" href="help.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="practical-guide">
+<h1>Practical Guide<a class="headerlink" href="#practical-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exome-example">
+<h2>Exome Example<a class="headerlink" href="#exome-example" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">1. Sample datasets</p>
+<blockquote>
+<div><ul class="simple">
+<li>After logging into an instance, go to <strong>Globus Data Transfer</strong> -&gt; <strong>Browse and Get Data via Globus Online</strong> under the tools panel.</li>
+<li>Search and select “sulakhe#SequencingCenter”</li>
+<li>When prompted, provide username: genomics and password: globus</li>
+<li>For Exome-seq pipeline, click <strong>Exome-seq-sample-data</strong> and transfer the Exome-Sample-Forward and Exome-Sample-Reverse sample files one-by-one. (we are adding multi-file transfers soon to this interface).</li>
+<li>Note that you don’t have to transfer the dbsnp and 1000G files as they are on the instance already.</li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/exome-seq.png" src="_images/exome-seq.png" />
+</div>
+</div>
+<div class="topic">
+<p class="topic-title first">2. Getting the dbsnp and 1000G-indels files from Shared library</p>
+<ul class="simple">
+<li>Go to <strong>Shared Data</strong> -&gt; <strong>Data Libraries</strong> from the top menu.</li>
+<li>Select the <strong>Reference Data Library</strong> and you should see the two files.</li>
+<li>Select them (Check box) and import to current history by clicking <strong>Go</strong></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">3. Running the Exome analysis</p>
+<ul class="simple">
+<li>To get the sample exome workflow, Go to <strong>Shared Data</strong> -&gt; <strong>Published Workflows</strong> and you should see <strong>Illumina Complete Exome Analysis Pipeline</strong>.</li>
+<li>Import the workflow by clicking <strong>Import Workflow</strong> on the top right.</li>
+<li>To run the workflow: Go to “Workflow” on top menu where you should see your imported workflow.</li>
+<li>click on the workflow and <strong>Run</strong>.</li>
+<li>By this time, if you already have the 4 input files required in the right-hand history panel, you should be able to select them in the Run interface</li>
+<li>Make sure you select the appropriate Forward and Reverse fastq files for BWA and then appropriate dbsnp and 1000G indels files for other tools.</li>
+<li>For Step 2: Add or Replace Groups, you can provide: ID = Test, SM = Test, LB = Test, PL = Illumina, PU= 100.</li>
+<li>And click the <strong>Run Workflow</strong> button at the bottom screen.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rna-seq-example">
+<h2>RNA-seq Example<a class="headerlink" href="#rna-seq-example" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">1. Sample datasets</p>
+<ul class="simple">
+<li>After logging into an instance, go to <strong>Globus Data Transfer</strong> -&gt; <strong>Browse and Get Data via Globus Online</strong> under the tools panel.</li>
+<li>Search and select <strong>sulakhe#SequencingCenter</strong></li>
+<li>When prompted, provide username: genomics and password: globus</li>
+<li>For Exome-seq pipeline, click <strong>RNA-seq-sample-data</strong> and transfer the files one-by-one. (we are adding multi-file transfers soon to this interface).</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">2. Running the RNAseq analysis</p>
+<ul class="simple">
+<li>Either import the RNAseq workflow from the front page or go to <strong>Shared Data</strong> -&gt; <strong>Published Workflows</strong>.</li>
+<li>The workflow might already have pre-defined globus transfers to pull the data from the SequencingCenter endpoint.</li>
+<li>Run the workflow and make sure all the required parameters are filled or selected appropriately.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="s3-haplotype-workflow-submission">
+<h2>S3-Haplotype Workflow Submission<a class="headerlink" href="#s3-haplotype-workflow-submission" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">- STEP 1</p>
+<a class="reference internal image-reference" href="_images/1.png"><img alt="_images/1.png" src="_images/1.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 2</p>
+<a class="reference internal image-reference" href="_images/2.png"><img alt="_images/2.png" src="_images/2.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 3</p>
+<a class="reference internal image-reference" href="_images/3.png"><img alt="_images/3.png" src="_images/3.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 4</p>
+<a class="reference internal image-reference" href="_images/4.png"><img alt="_images/4.png" src="_images/4.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 5</p>
+<a class="reference internal image-reference" href="_images/5.png"><img alt="_images/5.png" src="_images/5.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 6</p>
+<a class="reference internal image-reference" href="_images/6.png"><img alt="_images/6.png" src="_images/6.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 7</p>
+<a class="reference internal image-reference" href="_images/7.png"><img alt="_images/7.png" src="_images/7.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 8</p>
+<a class="reference internal image-reference" href="_images/8.png"><img alt="_images/8.png" src="_images/8.png" style="width: 650px;" /></a>
+</div>
+<div class="topic">
+<p class="topic-title first">- STEP 9</p>
+<a class="reference internal image-reference" href="_images/9.png"><img alt="_images/9.png" src="_images/9.png" style="width: 650px;" /></a>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Practical Guide</a><ul>
+<li><a class="reference internal" href="#exome-example">Exome Example</a></li>
+<li><a class="reference internal" href="#rna-seq-example">RNA-seq Example</a></li>
+<li><a class="reference internal" href="#s3-haplotype-workflow-submission">S3-Haplotype Workflow Submission</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="getting_started.html" title="previous chapter">Getting Started</a></li>
+      <li>Next: <a href="help.html" title="next chapter">Contact</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/practical_guide.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, test.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/practical_guide.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
